@@ -101,9 +101,9 @@ class IPCamera(object):
     def move_to(self, azimuth, altitude):
         """Move the camera to look at a given azimuth and altitude
 
-        Note: On the cameras I had available to test with , they supported 360 degree freedom
-        but could only do that by turning 180 degress either way.  So you you need to transition
-        from 170-190 degress, the camera will move from 170 0, and then 0 to 190.
+        Note: On the cameras I had available to test with, they supported 360 degree freedom
+        but could only do that by turning 180 degress either way.  So if you need to transition
+        from 170-190 degrees the camera will move from 170 to 0, and then 0 to 190.
 
         They cannot move from 170-190 directly crossing the 180 degree line. AbsoluteMove will
         handle this for you, but it may be unexpected, that the camera swivels almost 360 deg

@@ -2,6 +2,9 @@
 
 A proof of concept application for aircraft spotting using positional data from ADS-B
  and a PTZ IP camera.
+ 
+ ![asa311](https://user-images.githubusercontent.com/604163/36133796-76b08af6-1035-11e8-912a-9106d85e6927.jpg)
+
 
 This application receives aircraft position updates via ADS-B, calculates the azimuth
 and altitude to the aircraft from the camera's position and instructs the camera to

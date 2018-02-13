@@ -192,7 +192,7 @@ class Dump1090(ADSBReciver):
         rv = None
 
         if modes.adsb.df(msg) == 17:
-            if modes.adsb.typecode(msg) < 5:
+            if modes.adsb.typecode(msg) > 0 and modes.adsb.typecode(msg) < 5:
                 aircraft.callsign = modes.adsb.callsign(msg).rstrip('_')
 
             if modes.adsb.typecode(msg) == 19:

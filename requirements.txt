@@ -1,0 +1,4 @@
+onvif-zeep==0.2.7
+pyModeS==1.2.0
+expiringdict==1.1.4
+opencv-python==3.4.0.12

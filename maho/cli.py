@@ -67,7 +67,7 @@ def track_closest_aircraft(latitude, longitude, elevation, host, port, q):
             # or target is old, then use this new aircraft
             # or new aircraft isn't the target, but it is closer, so we switch!
             if (target is None or target.age > 60 or
-                    (target.icao != aircraft.icao and distance < target_distance)):
+                    (target.icao != aircraft.icao and aircraft.altitude >= (30000 * 0.3048) and distance < target_distance)):
                 target = aircraft
 
             # if we aren't the target at this point then bail
